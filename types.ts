@@ -1,4 +1,3 @@
-
 export type Page = 'dashboard' | 'pos' | 'inventory' | 'reports' | 'customers' | 'settings';
 
 export interface Product {
@@ -28,4 +27,12 @@ export interface Customer {
   email: string;
   memberSince: string;
   totalSpent: number;
+}
+
+export interface User {
+  id: string;
+  name: string;
+  username: string;
+  role: 'Admin' | 'Kasir';
+  status: 'Aktif' | 'Tidak Aktif';
 }

@@ -1,5 +1,4 @@
-
-import { Product, SalesData, Customer } from './types';
+import { Product, SalesData, Customer, User } from './types';
 
 export const MOCK_PRODUCTS: Product[] = [
   { id: '1', name: 'Susu UHT Coklat 1L', category: 'Minuman', price: 18500, stock: 150, imageUrl: 'https://picsum.photos/seed/milk/100', barcode: '899270110201' },
@@ -38,4 +37,10 @@ export const MOCK_CUSTOMERS: Customer[] = [
   { id: 'c8', name: 'Hesti Purwanti', phone: '081901234567', email: 'hesti.p@example.com', memberSince: '2023-08-11', totalSpent: 2890000 },
   { id: 'c9', name: 'Indra Gunawan', phone: '082123456789', email: 'indra.g@example.com', memberSince: '2023-09-02', totalSpent: 1100000 },
   { id: 'c10', name: 'Joko Widodo', phone: '082234567890', email: 'joko.w@example.com', memberSince: '2023-10-25', totalSpent: 5300000 },
+];
+
+export const MOCK_USERS: User[] = [
+  { id: 'u1', name: 'Admin Utama', username: 'admin', role: 'Admin', status: 'Aktif' },
+  { id: 'u2', name: 'Kasir Pagi', username: 'kasir01', role: 'Kasir', status: 'Aktif' },
+  { id: 'u3', name: 'Kasir Malam', username: 'kasir02', role: 'Kasir', status: 'Tidak Aktif' },
 ];
